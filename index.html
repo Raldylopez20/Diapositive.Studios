@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diapositive Studio | Agencia de Marketing Digital</title>
+    
+    <!-- Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Nuestro CSS principal -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ==================== NAVBAR (Barra de navegación) ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                DIAPOSITIVE <span class="logo-accent">STUDIO</span>
+            </a>
+            
+            <!-- Links de navegación (se ocultan en móvil) -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#services" class="nav-link">Servicios</a></li>
+                <li><a href="#projects" class="nav-link">Proyectos</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+            
+            <!-- Redes sociales -->
+            <div class="nav-social">
+                <a href="https://www.instagram.com/diapositive.studios/" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+            
+            <!-- Botón hamburguesa para móvil (solo se ve en pantallas pequeñas) -->
+            <button class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO (Sección principal) ==================== -->
+    <section class="hero" id="hero">
+        <!-- Gradiente de fondo decorativo -->
+        <div class="hero-gradient"></div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <!-- Subtítulo pequeño -->
+                <p class="hero-subtitle" data-aos="fade-up">MARKETING AGENCY</p>
+                
+                <!-- Título principal -->
+                <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                    ELEVAMOS TU<br>
+                    <span class="gradient-text">MARCA AL SIGUIENTE NIVEL</span>
+                </h1>
+                
+                <!-- Descripción -->
+                <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
+                    Estrategia, diseño y tecnología se unen para crear experiencias digitales inolvidables.
+                </p>
+                
+                <!-- Botones de acción -->
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
+                    <a href="#projects" class="btn btn-primary">
+                        Ver Proyectos
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="https://wa.me/18095550123" class="btn btn-secondary" target="_blank">
+                        Contáctanos
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Indicador de scroll (el mouse animado) -->
+        <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="400">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ¿POR QUÉ NOSOTROS? ==================== -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <!-- Título de la sección -->
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">
+                    ¿Por Qué <span class="gradient-text">Trabajar Con Nosotros?</span>
+                </h2>
+            </div>
+            
+            <!-- Grid de características (3 columnas) -->
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="feature-title">Innovación Constante</h3>
+                    <p class="feature-description">
+                        Utilizamos las últimas tecnologías y tendencias para mantener tu marca a la vanguardia.
+                    </p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="feature-title">Estrategia Creativa</h3>
+                    <p class="feature-description">
+                        Desarrollamos estrategias personalizadas que conectan con tu audiencia objetivo.
+                    </p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="feature-title">Resultados Reales</h3>
+                    <p class="feature-description">
+                        Nos enfocamos en métricas que importan y generan impacto medible en tu negocio.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICIOS ==================== -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">
+                    Nuestros <span class="gradient-text">Servicios</span>
+                </h2>
+            </div>
+            
+            <!-- Grid de servicios (6 servicios numerados) -->
+            <div class="services-grid">
+                <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-number">01</div>
+                    <h3 class="service-title">Diseño Web & UI/UX</h3>
+                    <p class="service-description">Creamos experiencias digitales que cautivan y convierten.</p>
+                </div>
+                
+                <div class="service-item" data-aos="fade-up" data-aos-delay="150">
+                    <div class="service-number">02</div>
+                    <h3 class="service-title">Branding & Identidad</h3>
+                    <p class="service-description">Construimos marcas memorables y coherentes.</p>
+                </div>
+                
+                <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-number">03</div>
+                    <h3 class="service-title">Social Media Manager</h3>
+                    <p class="service-description">Gestionamos tu presencia en redes sociales de manera estratégica.</p>
+                </div>
+                
+                <div class="service-item" data-aos="fade-up" data-aos-delay="250">
+                    <div class="service-number">04</div>
+                    <h3 class="service-title">Producción Audiovisual</h3>
+                    <p class="service-description">Contenido visual de alta calidad que cuenta tu historia.</p>
+                </div>
+                
+                <div class="service-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-number">05</div>
+                    <h3 class="service-title">Marketing Digital</h3>
+                    <p class="service-description">Campañas efectivas que generan resultados medibles.</p>
+                </div>
+                
+                <div class="service-item" data-aos="fade-up" data-aos-delay="350">
+                    <div class="service-number">06</div>
+                    <h3 class="service-title">Desarrollo Software</h3>
+                    <p class="service-description">Soluciones tecnológicas personalizadas para tu negocio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROYECTOS ==================== -->
+    <!--  
+        CÓMO AGREGAR UN PROYECTO NUEVO:
+        
+        1. Copia todo el bloque de "PROYECTO" (desde <div class="project-item"> hasta </div>)
+        2. Cambia la imagen de portada (src="...")
+        3. Cambia el título, categoría y descripción
+        4. Agrega las imágenes en <div class="info-gallery">
+        5. ¡Listo!
+    -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">
+                    Nuestros <span class="gradient-text">Proyectos</span>
+                </h2>
+            </div>
+            
+            <!-- Grid de proyectos (3x3 en desktop, 2x2 en móvil) -->
+            <div class="projects-grid" id="projectsGrid">
+                
+                <!-- ============ PROYECTO 1 ============ -->
+                <div class="project-item" data-aos="fade-up" data-aos-delay="0">
+                    <!-- Imagen de portada (la que se ve en el grid) -->
+                    <img src="img/prueba1.png" alt="Catalonia Bavaro Beach" class="project-img">
+                    
+                    <!-- Overlay que aparece al pasar el mouse -->
+                    <div class="project-overlay">
+                        <span class="project-tag">Fotografía Gastronómica</span>
+                        <h3 class="project-title">Catalonia Bavaro Beach</h3>
+                        <button class="btn btn-primary view-btn">
+                            <i class="fas fa-images"></i>
+                            Ver Proyecto
+                        </button>
+                    </div>
+
+                    <!-- Información completa del proyecto (oculta - solo para el modal) -->
+                    <div class="project-info" style="display: none;">
+                        <div class="info-title">Catalonia Bavaro Beach</div>
+                        <div class="info-category">Fotografía Gastronómica</div>
+                        <div class="info-description">
+                            Los levantamientos de contenido constituyen un pilar fundamental dentro de cualquier estrategia de comunicación, ya que, tras una planificación organizada y estratégica, se da inicio a la fase de producción. Esta etapa se ejecuta de manera exitosa cuando, desde su concepción, se cuenta con una visión creativa y estratégica orientada a garantizar la efectividad de todo el contenido generado por la compañía. A continuación, se presentan imágenes correspondientes a los restaurantes Ayami y Mamma Mia, pertenecientes al hotel Catalonia Bávaro Beach.
+                        </div>
+                        <!-- Galería de imágenes para el FancyBox -->
+                        <div class="info-gallery">
+                            <img src="img/prueba1.png">
+                            <img src="img/prueba2.png">
+                            <img src="img/prueba3.png">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============ PROYECTO 2 ============ -->
+                <div class="project-item" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://placehold.co/600x600/2a1a2a/F06292?text=Restaurante" alt="Restaurante Sabor" class="project-img">
+                    
+                    <div class="project-overlay">
+                        <span class="project-tag">Social Media</span>
+                        <h3 class="project-title">Restaurante Sabor</h3>
+                        <button class="btn btn-primary view-btn">
+                            <i class="fas fa-images"></i>
+                            Ver Proyecto
+                        </button>
+                    </div>
+
+                    <div class="project-info" style="display: none;">
+                        <div class="info-title">Restaurante Sabor</div>
+                        <div class="info-category">Social Media</div>
+                        <div class="info-description">
+                            Gestión integral de redes sociales y creación de contenido fotográfico de alta calidad para un restaurante de alta cocina. Desarrollamos una estrategia completa de contenido que incluye fotografía profesional de platillos, historias detrás de cámara y campañas de engagement con la audiencia.
+                        </div>
+                        <div class="info-gallery">
+                            <img src="https://placehold.co/1200x800/2a1a2a/F06292?text=Restaurante+1">
+                            <img src="https://placehold.co/1200x800/3a2a3a/F06292?text=Restaurante+2">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============ PROYECTO 3 ============ -->
+                <div class="project-item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://placehold.co/600x600/1a1a3a/E91E63?text=Urban+Wear" alt="Urban Wear" class="project-img">
+                    
+                    <div class="project-overlay">
+                        <span class="project-tag">E-commerce</span>
+                        <h3 class="project-title">Urban Wear</h3>
+                        <button class="btn btn-primary view-btn">
+                            <i class="fas fa-images"></i>
+                            Ver Proyecto
+                        </button>
+                    </div>
+
+                    <div class="project-info" style="display: none;">
+                        <div class="info-title">Urban Wear</div>
+                        <div class="info-category">E-commerce</div>
+                        <div class="info-description">
+                            Desarrollo completo de una tienda online en Shopify. Diseño personalizado y optimización de conversión. Implementamos una experiencia de usuario fluida con carrito de compras optimizado, pasarela de pagos integrada y sistema de gestión de inventario en tiempo real.
+                        </div>
+                        <div class="info-gallery">
+                            <img src="https://placehold.co/1200x800/1a1a3a/E91E63?text=Urban+1">
+                            <img src="https://placehold.co/1200x800/2a2a4a/E91E63?text=Urban+2">
+                            <img src="https://placehold.co/1200x800/1a1a3a/F06292?text=Urban+3">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============ PROYECTO 4 ============ -->
+                <div class="project-item" data-aos="fade-up" data-aos-delay="0">
+                    <img src="https://placehold.co/600x600/1a2a1a/F06292?text=Clinica" alt="Clínica Vital" class="project-img">
+                    
+                    <div class="project-overlay">
+                        <span class="project-tag">Web Development</span>
+                        <h3 class="project-title">Clínica Vital</h3>
+                        <button class="btn btn-primary view-btn">
+                            <i class="fas fa-images"></i>
+                            Ver Proyecto
+                        </button>
+                    </div>
+
+                    <div class="project-info" style="display: none;">
+                        <div class="info-title">Clínica Vital</div>
+                        <div class="info-category">Web Development</div>
+                        <div class="info-description">
+                            Sitio web corporativo y profesional para una clínica médica, con integración de sistema de citas en línea. Desarrollamos una plataforma que facilita la gestión de pacientes, permite agendar citas 24/7 y ofrece información detallada sobre servicios médicos.
+                        </div>
+                        <div class="info-gallery">
+                            <img src="https://placehold.co/1200x800/1a2a1a/F06292?text=Clinica+1">
+                            <img src="https://placehold.co/1200x800/2a3a2a/F06292?text=Clinica+2">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============ PROYECTO 5 ============ -->
+                <div class="project-item" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://placehold.co/600x600/3a1a1a/E91E63?text=Festival" alt="Festival Music" class="project-img">
+                    
+                    <div class="project-overlay">
+                        <span class="project-tag">Eventos</span>
+                        <h3 class="project-title">Festival Music</h3>
+                        <button class="btn btn-primary view-btn">
+                            <i class="fas fa-images"></i>
+                            Ver Proyecto
+                        </button>
+                    </div>
+
+                    <div class="project-info" style="display: none;">
+                        <div class="info-title">Festival Music</div>
+                        <div class="info-category">Eventos</div>
+                        <div class="info-description">
+                            Campaña promocional y cobertura audiovisual completa para un festival de música electrónica. Creamos contenido multimedia incluyendo videos promocionales, fotografía del evento, diseño de materiales gráficos y estrategia de marketing digital para maximizar la asistencia.
+                        </div>
+                        <div class="info-gallery">
+                            <img src="https://placehold.co/1200x800/3a1a1a/E91E63?text=Festival+1">
+                            <img src="https://placehold.co/1200x800/4a2a2a/E91E63?text=Festival+2">
+                            <img src="https://placehold.co/1200x800/3a1a1a/F06292?text=Festival+3">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============ PROYECTO 6 ============ -->
+                <div class="project-item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://placehold.co/600x600/1a1a4a/F06292?text=Branding" alt="Tech Startup" class="project-img">
+                    
+                    <div class="project-overlay">
+                        <span class="project-tag">Branding</span>
+                        <h3 class="project-title">Tech Startup</h3>
+                        <button class="btn btn-primary view-btn">
+                            <i class="fas fa-images"></i>
+                            Ver Proyecto
+                        </button>
+                    </div>
+
+                    <div class="project-info" style="display: none;">
+                        <div class="info-title">Tech Startup</div>
+                        <div class="info-category">Branding</div>
+                        <div class="info-description">
+                            Identidad visual completa para startup tecnológica. Desarrollamos desde el logo hasta el manual de marca, incluyendo paleta de colores, tipografías, aplicaciones en diferentes medios y guidelines para mantener consistencia en todas las comunicaciones.
+                        </div>
+                        <div class="info-gallery">
+                            <img src="https://placehold.co/1200x800/1a1a4a/F06292?text=Branding+1">
+                            <img src="https://placehold.co/1200x800/2a2a5a/F06292?text=Branding+2">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== LLAMADO A LA ACCIÓN (CONTACTO) ==================== -->
+    <section class="contact-cta" id="contact">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2 class="cta-title">¿Listo para <span class="gradient-text">elevar tu marca?</span></h2>
+                <p class="cta-description">
+                    Agenda una consulta gratuita y descubre cómo podemos ayudarte a alcanzar tus objetivos.
+                </p>
+                <a href="https://wa.me/18095550123" class="btn btn-primary btn-large" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    Agenda una Cita Hoy
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Columna 1: Brand y descripción -->
+                <div class="footer-brand">
+                    <h3 class="footer-logo">DIAPOSITIVE <span class="logo-accent">STUDIO</span></h3>
+                    <p class="footer-description">
+                        Creamos experiencias digitales que transforman marcas. 
+                        Diseño premium, desarrollo moderno y estrategias que funcionan.
+                    </p>
+                </div>
+                
+                <!-- Columna 2: Contacto -->
+                <div class="footer-contact">
+                    <h4 class="footer-title">Contacto</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (809) 555-0123</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@diapositivestudio.com</span>
+                    </div>
+                </div>
+                
+                <!-- Columna 3: Redes sociales -->
+                <div class="footer-social">
+                    <h4 class="footer-title">Síguenos</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/diapositive.studios/" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" target="_blank" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Diapositive Studio. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== BOTÓN FLOTANTE DE WHATSAPP ==================== -->
+    <!-- Este botón siempre está visible en la esquina inferior derecha -->
+    <a href="https://wa.me/18095550123" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ==================== MODAL DE PROYECTO (FANCYBOX) ==================== -->
+    <!-- Este modal se abre cuando haces click en "Ver Proyecto" -->
+    <div class="project-modal" id="projectModal">
+        <!-- Fondo oscuro semitransparente -->
+        <div class="modal-overlay" id="modalOverlay"></div>
+        
+        <!-- Contenedor del modal -->
+        <div class="modal-wrapper">
+            <!-- Botón para cerrar el modal -->
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="modal-content">
+                <!-- SECCIÓN DE GALERÍA (imágenes grandes) -->
+                <div class="modal-gallery">
+                    <!-- Imagen principal grande -->
+                    <div class="gallery-main">
+                        <img id="mainImage" src="" alt="">
+                        
+                        <!-- Flecha izquierda (imagen anterior) -->
+                        <button class="gallery-arrow gallery-prev" id="prevBtn">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        
+                        <!-- Flecha derecha (siguiente imagen) -->
+                        <button class="gallery-arrow gallery-next" id="nextBtn">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        
+                        <!-- Contador de imágenes (ej: 1 / 3) -->
+                        <div class="gallery-counter" id="galleryCounter">1 / 1</div>
+                    </div>
+                    
+                    <!-- Miniaturas (thumbnails) clickeables -->
+                    <div class="gallery-thumbs" id="galleryThumbs">
+                        <!-- Se llenan dinámicamente con JavaScript -->
+                    </div>
+                </div>
+
+                <!-- SECCIÓN DE INFORMACIÓN DEL PROYECTO -->
+                <div class="modal-info">
+                    <div class="modal-info-content">
+                        <!-- Categoría del proyecto -->
+                        <span class="project-category" id="projectCategory">CATEGORÍA</span>
+                        
+                        <!-- Título del proyecto -->
+                        <h2 class="project-name" id="projectName">Nombre del Proyecto</h2>
+                        
+                        <!-- Descripción completa -->
+                        <p class="project-desc" id="projectDesc">Descripción del proyecto...</p>
+                    </div>
+                    
+                    <!-- Botón de WhatsApp para cotizar -->
+                    <a href="https://wa.me/18095550123" class="btn btn-primary btn-block" id="whatsappCTA" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        Cotizar Proyecto Similar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript principal (toda la funcionalidad del sitio) -->
+    <script src="script.js"></script>
+</body>
+</html>
