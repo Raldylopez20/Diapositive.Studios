@@ -1021,7 +1021,8 @@ ul {
 
 @media (max-width: 480px) {
     .hero {
-        min-height: 100vh;
+        min-height: 75vh;
+        padding-top: 60px;
     }
     
     .hero-buttons {
@@ -1034,7 +1035,7 @@ ul {
     }
     
     .scroll-indicator {
-        bottom: 5px;
+        bottom: 30px;
     }
     
     .whatsapp-float {
@@ -1077,4 +1078,3 @@ ul {
         bottom: 15px;
     }
 }
-
