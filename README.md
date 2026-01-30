@@ -7,10 +7,10 @@ Diseñado para ser ligero, elegante y fácil de personalizar.
 
 ---
 
-## 🚀 Características
-- Presentación de imágenes en formato de diapositivas.
-- Navegación con botones y transiciones suaves.
-- Diseño **responsive** adaptado a móviles y escritorio.
-- Estilos modernos con **CSS personalizado**.
-- Código limpio y fácil de extender.
+## 🚀 Servicios destacados
+- Marketing digital y gestión de redes sociales.
+- Branding y diseño visual.
+- Desarrollo web y optimización SEO.
+- Estrategias de publicidad online.
+
 
