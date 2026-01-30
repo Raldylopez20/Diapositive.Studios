@@ -1021,7 +1021,7 @@ ul {
 
 @media (max-width: 480px) {
     .hero {
-        min-height: 75vh;
+        min-height: 85vh;
         padding-top: 60px;
     }
     
