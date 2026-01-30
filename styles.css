@@ -75,14 +75,16 @@ ul {
 .btn {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
-    padding: 16px 32px;
-    border-radius: 50px;
-    font-weight: 600;
-    font-size: 15px;
-    transition: all 0.3s ease;
-    cursor: pointer;
+    padding: 15px 30px;
     border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
     text-align: center;
 }
 
@@ -265,7 +267,7 @@ ul {
 
 .scroll-indicator {
     position: absolute;
-    bottom: 40px;
+    bottom: 22px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -288,6 +290,7 @@ ul {
     left: 50%;
     transform: translateX(-50%);
     animation: scroll 1.5s infinite;
+
 }
 
 @keyframes scroll {
@@ -323,7 +326,8 @@ ul {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 16px;
-    padding: 40px;
+    padding: 40px 30px;
+    text-align: center;
     transition: all 0.3s ease;
 }
 
@@ -334,26 +338,28 @@ ul {
 }
 
 .feature-icon {
-    width: 64px;
-    height: 64px;
+    width: 80px;
+    height: 80px;
     background: var(--gradient-primary);
-    border-radius: 16px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 28px;
-    margin-bottom: 24px;
+    margin: 0 auto 24px auto;
 }
 
 .feature-title {
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 12px;
+    text-align: center;
 }
 
 .feature-description {
     color: var(--text-muted);
     line-height: 1.6;
+    text-align: center;
 }
 
 /* ==================== SERVICES ==================== */
@@ -874,11 +880,78 @@ ul {
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    
+    .scroll-indicator {
+        bottom: 100px;
+    }
 }
 
 @media (max-width: 768px) {
     .nav-menu {
         display: none;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 400px;
+        height: 100vh;
+        background: rgba(10, 10, 10, 0.98);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 40px;
+        transition: right 0.3s ease;
+        z-index: 998;
+    }
+    
+    .nav-menu.active {
+        display: flex;
+        right: 0;
+    }
+    
+    .mobile-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 999;
+        position: relative;
+    }
+    
+    .mobile-toggle span {
+        width: 25px;
+        height: 2px;
+        background: white;
+        transition: all 0.3s ease;
+        transform-origin: center;
+    }
+    
+    .mobile-toggle span:not(:last-child) {
+        margin-bottom: 5px;
+    }
+    
+    .mobile-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .mobile-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .mobile-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+    
+    .nav-link {
+        font-size: 18px;
+        font-weight: 600;
     }
     
     .mobile-toggle {
@@ -892,6 +965,10 @@ ul {
     
     .footer-content {
         grid-template-columns: 1fr;
+    }
+    
+    .scroll-indicator {
+        bottom: 75px;
     }
     
     .modal-wrapper {
@@ -943,6 +1020,10 @@ ul {
 }
 
 @media (max-width: 480px) {
+    .hero {
+        min-height: 110vh;
+    }
+    
     .hero-buttons {
         flex-direction: column;
         width: 100%;
@@ -950,6 +1031,10 @@ ul {
     
     .btn {
         width: 100%;
+    }
+    
+    .scroll-indicator {
+        bottom: 5px;
     }
     
     .whatsapp-float {
