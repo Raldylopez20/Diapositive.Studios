@@ -1021,7 +1021,7 @@ ul {
 
 @media (max-width: 480px) {
     .hero {
-        min-height: 80vh;
+        min-height: 100vh;
     }
     
     .hero-buttons {
@@ -1077,3 +1077,4 @@ ul {
         bottom: 15px;
     }
 }
+
