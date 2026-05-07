@@ -605,7 +605,7 @@ ul {
 /* ==================== PROJECTS ==================== */
 .projects {
     padding: var(--section-padding) 0;
-    background: var(--dark-light);
+    background: var(--dark);
 }
 
 .projects-grid {
