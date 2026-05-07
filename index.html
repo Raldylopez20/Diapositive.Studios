@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diapositive Studio | Agencia de Marketing Digital</title>
+    
+    <!-- Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Fancybox 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+    
+    <!-- Nuestro CSS principal -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- ==================== NAVBAR (Barra de navegación) ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <!-- Logo -->
+            <a href="#" class="logo">
+                DIAPOSITIVE <span class="logo-accent">STUDIO</span>
+            </a>
+            
+            <!-- Links de navegación (se ocultan en móvil) -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#services" class="nav-link">Servicios</a></li>
+                <li><a href="#projects" class="nav-link">Proyectos</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+            
+            <!-- Redes sociales -->
+            <div class="nav-social">
+                <!-- <a href="https://www.instagram.com/diapositive.studios/" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+               <a href="#" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook"></i>
+                </a>-->
+            </div>
+            
+            <!-- Botón hamburguesa para móvil (solo se ve en pantallas pequeñas) -->
+            <button class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div> 
+    </nav> 
+
+    <!-- ==================== HERO (Sección principal) ==================== -->
+    <section class="hero" id="hero">
+        <!-- Gradiente de fondo decorativo -->
+        <div class="hero-gradient"></div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <!-- Subtítulo pequeño -->
+                <p class="hero-subtitle" data-aos="fade-up">MARKETING AGENCY</p>
+                
+                <!-- Título principal -->
+                <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+                    ELEVEMOS TU<br>
+                    <span class="gradient-text">MARCA AL SIGUIENTE NIVEL</span>
+                </h1>
+                
+                <!-- Descripción -->
+                <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
+                    Estrategia, Diseño y Creatividad se unen para crear experiencias digitales inolvidables.
+                </p>
+                
+                <!-- Botones de acción -->
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="300">
+                    <a href="#projects" class="btn btn-primary">
+                        Ver Proyectos
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="https://wa.me/18297910390?text=Hola%2C%20Diapositive!%20Vi%20su%20pagina%20web%20y%20me%20gustaria%20saber%20mas%20sobre%20sus%20servicios.%20Pueden%20darme%20mas%20informacion%3F" class="btn btn-secondary" target="_blank">
+                        Contáctanos
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Indicador de scroll (el mouse animado) -->
+        <!-- <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="400">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div> -->
+    </section>
+
+    <!-- ==================== PLANES ==================== -->
+    <section class="plans" id="planes">
+        <div class="container">
+            <!-- Título de la sección -->
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">
+                    Nuestros <span class="gradient-text">Planes</span>
+                </h2>
+                <p class="section-subtitle">Soluciones diseñadas para cada etapa de tu marca</p>
+            </div>
+
+            <!-- Grid de 3 planes -->
+            <div class="plans-grid">
+
+                <!-- ====== PLAN 1: Base Sólida ====== -->
+                <div class="plan-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="plan-badge">Ideal para comenzar</div>
+                    <div class="plan-header">
+                        <span class="plan-name">Plan Base Sólida</span>
+                        <p class="plan-slogan">Empieza bien, crece mejor</p>
+                    </div>
+                    <div class="plan-price">
+                        <span class="price-from">desde</span>
+                        <span class="price-amount"><span class="price-currency">US$</span>200</span>
+                        <span class="price-to">hasta US$285 / mes</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check-circle"></i> 12 publicaciones (8 posts + 4 reels)</li>
+                        <li><i class="fas fa-check-circle"></i> 12 historias</li>
+                        <li><i class="fas fa-check-circle"></i> Diseño + copywriting</li>
+                        <li><i class="fas fa-check-circle"></i> Calendario mensual</li>
+                        <li><i class="fas fa-check-circle"></i> Publicidad paga (con presupuesto)</li>
+                        <li><i class="fas fa-check-circle"></i> Producción audiovisual básica</li>
+                        <li><i class="fas fa-check-circle"></i> Soporte en DM y comentarios</li>
+                        <li><i class="fas fa-check-circle"></i> Gestión de modelos</li>
+                    </ul>
+                    <p class="plan-ideal"><i class="fas fa-bullseye"></i> Ideal para marcas que necesitan construir una presencia digital firme desde cero.</p>
+                    <a href="https://wa.me/18297910390" class="btn btn-plan" data-waplan="base" target="_blank">
+                        Quiero este plan <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- ====== PLAN 2: Visibilidad Full (DESTACADO) ====== -->
+                <div class="plan-card plan-featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="plan-badge plan-badge-featured">Más popular</div>
+                    <div class="plan-header">
+                        <span class="plan-name">Plan Visibilidad Full</span>
+                        <p class="plan-slogan">Haz que todos te vean</p>
+                    </div>
+                    <div class="plan-price">
+                        <span class="price-from">desde</span>
+                        <span class="price-amount"><span class="price-currency">US$</span>250</span>
+                        <span class="price-to">hasta US$335 / mes</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check-circle"></i> 16 publicaciones</li>
+                        <li><i class="fas fa-check-circle"></i> 12 historias</li>
+                        <li><i class="fas fa-check-circle"></i> Todo lo del plan anterior</li>
+                        <li><i class="fas fa-check-circle"></i> Manejo de Instagram y Facebook</li>
+                        <li><i class="fas fa-check-circle"></i> Sesión de fotos profesional trimestral</li>
+                    </ul>
+                    <p class="plan-ideal"><i class="fas fa-bullseye"></i> Ideal para marcas que buscan crecer, destacar y aumentar su alcance.</p>
+                    <a href="https://wa.me/18297910390" class="btn btn-plan btn-plan-featured" data-waplan="full" target="_blank">
+                        Quiero este plan <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- ====== PLAN 3: Impacto Total ====== -->
+                <div class="plan-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="plan-badge">Máximo impacto</div>
+                    <div class="plan-header">
+                        <span class="plan-name">Plan Impacto Total</span>
+                        <p class="plan-slogan">Convierte alcance en ventas</p>
+                    </div>
+                    <div class="plan-price">
+                        <span class="price-from">desde</span>
+                        <span class="price-amount"><span class="price-currency">US$</span>380</span>
+                        <span class="price-to">hasta US$450 / mes</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check-circle"></i> 20 publicaciones</li>
+                        <li><i class="fas fa-check-circle"></i> 16 historias</li>
+                        <li><i class="fas fa-check-circle"></i> Todo lo del plan anterior</li>
+                        <li><i class="fas fa-check-circle"></i> Manejo de Instagram, Facebook y TikTok</li>
+                        <li><i class="fas fa-check-circle"></i> Sesión de fotos bimestral</li>
+                        <li><i class="fas fa-check-circle"></i> Estrategias de colaboración</li>
+                    </ul>
+                    <p class="plan-ideal"><i class="fas fa-bullseye"></i> Ideal para negocios que quieren posicionarse fuerte y convertir visibilidad en resultados.</p>
+                    <a href="https://wa.me/18297910390" class="btn btn-plan" data-waplan="total" target="_blank">
+                        Quiero este plan <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SERVICIOS ==================== -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">
+                    Nuestros <span class="gradient-text">Servicios</span>
+                </h2>
+            </div>
+            
+            <!-- Grid de servicios (6 servicios numerados) -->
+            <div class="services-grid">
+                <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-number">01</div>
+                    <h3 class="service-title">Diseño Web & UI/UX</h3>
+                    <p class="service-description">Creamos experiencias digitales que cautivan y convierten.</p>
+                </div>
+                
+                <div class="service-item" data-aos="fade-up" data-aos-delay="150">
+                    <div class="service-number">02</div>
+                    <h3 class="service-title">Branding & Identidad</h3>
+                    <p class="service-description">Construimos marcas memorables y coherentes.</p>
+                </div>
+                
+                <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-number">03</div>
+                    <h3 class="service-title">Social Media Manager</h3>
+                    <p class="service-description">Gestionamos tu presencia en redes sociales de manera estratégica.</p>
+                </div>
+                
+                <div class="service-item" data-aos="fade-up" data-aos-delay="250">
+                    <div class="service-number">04</div>
+                    <h3 class="service-title">Producción Audiovisual</h3>
+                    <p class="service-description">Contenido visual de alta calidad que cuenta tu historia.</p>
+                </div>
+                
+                <div class="service-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-number">05</div>
+                    <h3 class="service-title">Marketing Digital</h3>
+                    <p class="service-description">Campañas efectivas que generan resultados medibles.</p>
+                </div>
+                
+                <div class="service-item" data-aos="fade-up" data-aos-delay="350">
+                    <div class="service-number">06</div>
+                    <h3 class="service-title">Creacion de Paginas Web</h3>
+                    <p class="service-description">Soluciones tecnológicas personalizadas para tu negocio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== PROYECTOS ==================== -->
+    <!--  
+        CÓMO AGREGAR UN PROYECTO NUEVO:
+        
+        1. Copia todo el bloque de "PROYECTO" (desde <div class="project-item"> hasta </div>)
+        2. Cambia la imagen de portada (src="...")
+        3. Cambia el título, categoría y descripción
+        4. Agrega las imágenes en <div class="info-gallery">
+        5. ¡Listo!
+    -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">
+                    Nuestros <span class="gradient-text">Proyectos</span>
+                </h2>
+            </div>
+            
+            <!-- Grid de proyectos (3x3 en desktop, 2x2 en móvil) -->
+            <div class="projects-grid" id="projectsGrid">
+                
+                <!-- ============ PROYECTO 1 ============ -->
+                <div class="project-item" data-aos="fade-up" data-aos-delay="0">
+
+                    <!-- Imagen de portada (la que se ve en el grid) -->
+                    <img src="img/coedh/1.avif" alt="COEDH" class="project-img">
+                    
+                    <!-- Overlay que aparece al pasar el mouse -->
+                    <div class="project-overlay">
+                        <span class="project-tag">Fotografía a Clinica Odontologica</span>
+                        <h3 class="project-title">COEDH</h3>
+                        <button class="btn btn-primary view-btn">
+                            <i class="fas fa-images"></i>
+                            Ver Proyecto
+                        </button>
+                    </div>
+
+                    <!-- Información completa del proyecto (oculta - solo para el modal) -->
+                    <div class="project-info" style="display: none;">
+                        <div class="info-title">COEDH</div>
+                        <div class="info-category">Fotografía a Clinica Odontologica</div>
+                        <div class="info-description">
+                            Los levantamientos de contenido constituyen un pilar fundamental dentro de cualquier estrategia de comunicación, ya que, tras una planificación organizada y estratégica, se da inicio a la fase de producción. Esta etapa se ejecuta de manera exitosa cuando, desde su concepción, se cuenta con una visión creativa y estratégica orientada a garantizar la efectividad de todo el contenido generado por la compañía. A continuación, se presentan imágenes correspondientes a los restaurantes Ayami y Mamma Mia, pertenecientes al hotel Catalonia Bávaro Beach.
+                        </div>
+                        <!-- Galería de imágenes para el FancyBox -->
+                        <div class="info-gallery">
+                            <img src="img/coedh/1.avif">
+                            <img src="img/coedh/2.avif">
+                            <img src="img/coedh/3.avif">
+                            <img src="img/coedh/4.avif">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============ PROYECTO 2 ============ -->
+                <div class="project-item" data-aos="fade-up" data-aos-delay="100">
+                    <img src="img/dkay/1.avif" alt="DKAY Natural Essence" class="project-img">
+                    
+                    <div class="project-overlay">
+                        <span class="project-tag">Productos Naturales</span>
+                        <h3 class="project-title">DKAY Natural Essence</h3>
+                        <button class="btn btn-primary view-btn">
+                            <i class="fas fa-images"></i>
+                            Ver Proyecto
+                        </button>
+                    </div>
+
+                    <div class="project-info" style="display: none;">
+                        <div class="info-title">DKAY Natural Essence</div>
+                        <div class="info-category">Productos Naturales</div>
+                        <div class="info-description">
+                            Gestión integral de redes sociales y creación de contenido fotográfico de alta calidad para un restaurante de alta cocina. Desarrollamos una estrategia completa de contenido que incluye fotografía profesional de platillos, historias detrás de cámara y campañas de engagement con la audiencia.
+                        </div>
+                        <div class="info-gallery">
+                            <img src="img/dkay/1.avif">
+                            <img src="img/dkay/2.avif">
+                            <img src="img/dkay/3.avif">
+                            <img src="img/dkay/4.avif">
+                            <img src="img/dkay/5.avif">
+   
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============ PROYECTO 3 ============ -->
+                <div class="project-item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="img/dulceria/1.avif" alt="Dulceria Doña Edelmira" class="project-img">
+                    
+                    <div class="project-overlay">
+                        <span class="project-tag">Dulceria</span>
+                        <h3 class="project-title">Dulceria Doña Edelmira</h3>
+                        <button class="btn btn-primary view-btn">
+                            <i class="fas fa-images"></i>
+                            Ver Proyecto
+                        </button>
+                    </div>
+
+                    <div class="project-info" style="display: none;">
+                        <div class="info-title">Dulceria Doña Edelmira</div>
+                        <div class="info-category">Dulceria</div>
+                        <div class="info-description">
+                            Desarrollo completo de una tienda online en Shopify. Diseño personalizado y optimización de conversión. Implementamos una experiencia de usuario fluida con carrito de compras optimizado, pasarela de pagos integrada y sistema de gestión de inventario en tiempo real.
+                        </div>
+                        <div class="info-gallery">
+                            <img src="img/dulceria/1.avif">
+                            <img src="img/dulceria/2.avif">
+                            <img src="img/dulceria/3.avif">
+                            <img src="img/dulceria/4.avif">
+                            <img src="img/dulceria/5.avif">
+                            <img src="img/dulceria/6.avif">
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============ PROYECTO 4 ============ -->
+                <div class="project-item" data-aos="fade-up" data-aos-delay="0">
+                    <img src="img/hairway/1.avif" alt="HairWay" class="project-img">
+                    
+                    <div class="project-overlay">
+                        <span class="project-tag">Productos para el Cabello</span>
+                        <h3 class="project-title">HairWay</h3>
+                        <button class="btn btn-primary view-btn">
+                            <i class="fas fa-images"></i>
+                            Ver Proyecto
+                        </button>
+                    </div>
+
+                    <div class="project-info" style="display: none;">
+                        <div class="info-title">HairWay</div>
+                        <div class="info-category">Productos para el Cabello</div>
+                        <div class="info-description">
+                            Desarrollo de pagina web para productos para el cabello 
+                        </div>
+                        <div class="info-gallery">
+                            <img src="img/hairway/1.avif">
+                            <img src="img/hairway/2.avif">
+                            <img src="img/hairway/3.avif">
+                            <img src="img/hairway/4.avif">
+                            <img src="img/hairway/5.avif">
+                            <img src="img/hairway/6.avif"> 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============ PROYECTO 5 ============ -->
+                <div class="project-item" data-aos="fade-up" data-aos-delay="100">
+                    <img src="img/smilelab/1.avif" alt="SmileLab" class="project-img">
+                    
+                    <div class="project-overlay">
+                        <span class="project-tag">Odontología</span>
+                        <h3 class="project-title">SmileLab</h3>
+                        <button class="btn btn-primary view-btn">
+                            <i class="fas fa-images"></i>
+                            Ver Proyecto
+                        </button>
+                    </div>
+
+                    <div class="project-info" style="display: none;">
+                        <div class="info-title">SmileLab</div>
+                        <div class="info-category">Odontología</div>
+                        <div class="info-description">
+                            Desarrollo de pagina web para clinica odontológica
+                        </div>
+                        <div class="info-gallery">
+                            <img src="img/smilelab/1.avif">
+                            <img src="img/smilelab/2.avif">
+                            <img src="img/smilelab/3.avif">
+                            <img src="img/smilelab/4.avif">
+                            <img src="img/smilelab/5.avif">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============ PROYECTO 6 ============ -->
+                <div class="project-item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="img/titos/1.avif" alt="Tito's Kitchen" class="project-img">
+                    
+                    <div class="project-overlay">
+                        <span class="project-tag">Restaurante</span>
+                        <h3 class="project-title">Tito's Kitchen</h3>
+                        <button class="btn btn-primary view-btn">
+                            <i class="fas fa-images"></i>
+                            Ver Proyecto
+                        </button>
+                    </div>
+
+                    <div class="project-info" style="display: none;">
+                        <div class="info-title">Tito's Kitchen</div>
+                        <div class="info-category">Restaurante</div>
+                        <div class="info-description">
+                            Desarrollo de pagina web para restaurante
+                        </div>
+                        <div class="info-gallery">
+                            <img src="img/titos/1.avif">
+                            <img src="img/titos/2.avif">
+                            <img src="img/titos/3.avif">
+                            <img src="img/titos/4.avif">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== LLAMADO A LA ACCIÓN (CONTACTO) ==================== -->
+    <section class="contact-cta" id="contact">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2 class="cta-title">¿Listo para <span class="gradient-text">elevar tu marca?</span></h2>
+                <p class="cta-description">
+                    Agenda una consulta gratuita y descubre cómo podemos ayudarte a alcanzar tus objetivos.
+                </p>
+                <a href="https://wa.me/18297910390?text=Hola%2C%20Diapositive!%20Quiero%20agendar%20una%20consulta%20gratuita%20para%20saber%20como%20pueden%20ayudarme%20a%20elevar%20mi%20marca.%20Cuando%20tienen%20disponibilidad%3F" class="btn btn-primary btn-large" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    Agenda una Cita Hoy
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Columna 1: Brand y descripción -->
+                <div class="footer-brand">
+                    <h3 class="footer-logo">DIAPOSITIVE <span class="logo-accent">STUDIO</span></h3>
+                    <p class="footer-description">
+                        Creamos experiencias digitales que transforman marcas. 
+                        Diseño premium, desarrollo moderno y estrategias que funcionan.
+                    </p>
+                </div>
+                
+                <!-- Columna 2: Contacto -->
+                <div class="footer-contact">
+                    <h4 class="footer-title">Contacto</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+18297910390" style="color: inherit; text-decoration: none;">+1 (829) 791 0390</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:diapositiverdcontact@gmail.com" style="color: inherit; text-decoration: none;">diapositiverdcontact@gmail.com</a>
+                    </div>
+                </div>
+                
+                <!-- Columna 3: Redes sociales -->
+                <div class="footer-social">
+                    <h4 class="footer-title">Síguenos</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/diapositive.studios/" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
+                        <!--<a href="#" target="_blank" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>-->
+
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Diapositive Studio. Todos los derechos reservados.</p>
+                <p>Developed by <a href="https://raldylopez20.github.io/Landing-page-personal-de-servicios/" style="color: #E91E63; text-decoration: none;">Raldy Lopez</a></p>
+                
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== BOTÓN FLOTANTE DE WHATSAPP ==================== -->
+    <!-- Este botón siempre está visible en la esquina inferior derecha -->
+    <a href="https://wa.me/18297910390?text=Hola%2C%20Diapositive!%20Vi%20su%20pagina%20web%20y%20me%20gustaria%20saber%20mas%20sobre%20sus%20servicios.%20Pueden%20darme%20mas%20informacion%3F" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ==================== MODAL DE PROYECTO (FANCYBOX) ==================== -->
+    <!-- Este modal se abre cuando haces click en "Ver Proyecto" -->
+    <div class="project-modal" id="projectModal">
+        <!-- Fondo oscuro semitransparente -->
+        <div class="modal-overlay" id="modalOverlay"></div>
+        
+        <!-- Contenedor del modal -->
+        <div class="modal-wrapper">
+            <!-- Botón para cerrar el modal -->
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="modal-content">
+                <!-- SECCIÓN DE GALERÍA (imágenes grandes) -->
+                <div class="modal-gallery">
+                    <!-- Imagen principal grande -->
+                    <div class="gallery-main">
+                        <img id="mainImage" src="" alt="">
+                        
+                        <!-- Flecha izquierda (imagen anterior) -->
+                        <button class="gallery-arrow gallery-prev" id="prevBtn">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        
+                        <!-- Flecha derecha (siguiente imagen) -->
+                        <button class="gallery-arrow gallery-next" id="nextBtn">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        
+                        <!-- Contador de imágenes (ej: 1 / 3) -->
+                        <div class="gallery-counter" id="galleryCounter">1 / 1</div>
+                    </div>
+                    
+                    <!-- Miniaturas (thumbnails) clickeables -->
+                    <div class="gallery-thumbs" id="galleryThumbs">
+                        <!-- Se llenan dinámicamente con JavaScript -->
+                    </div>
+                </div>
+
+                <!-- SECCIÓN DE INFORMACIÓN DEL PROYECTO -->
+                <div class="modal-info">
+                    <div class="modal-info-content">
+                        <!-- Categoría del proyecto -->
+                        <span class="project-category" id="projectCategory">CATEGORÍA</span>
+                        
+                        <!-- Título del proyecto -->
+                        <h2 class="project-name" id="projectName">Nombre del Proyecto</h2>
+                        
+                        <!-- Descripción completa -->
+                        <p class="project-desc" id="projectDesc">Descripción del proyecto...</p>
+                    </div>
+                    
+                    <!-- Botón de WhatsApp para cotizar -->
+                    <a href="https://wa.me/18297910390" class="btn btn-primary btn-block" id="whatsappCTA" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        Cotizar Proyecto Similar
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fancybox 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <!-- JavaScript principal (toda la funcionalidad del sitio) -->
+    <script src="script.js"></script>
+</body>
+</html>
