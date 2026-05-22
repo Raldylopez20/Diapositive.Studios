@@ -172,10 +172,17 @@ function openModal(project) {
     // Actualizar info
     projectCategory.textContent = project.category;
     projectName.textContent = project.title;
-    projectDesc.textContent = project.description;
+    
+    if (project.description && project.description.trim().length > 0) {
+        projectDesc.textContent = project.description.trim();
+        projectDesc.style.display = 'block';
+    } else {
+        projectDesc.textContent = '';
+        projectDesc.style.display = 'none';
+    }
     
     // Actualizar WhatsApp
-    whatsappCTA.href = `https://wa.me/18095550123?text=Hola, me interesa un proyecto como: ${encodeURIComponent(project.title)}`;
+    whatsappCTA.href = `https://wa.me/18297910390?text=Hola, me interesa un proyecto como: ${encodeURIComponent(project.title)}`;
     
     // Mostrar imagen
     updateMainImage();
